@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/detail/detail"
   ],
   "subPackages": [],
   "window": {
@@ -9,6 +10,22 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "接口"
+      }
+    ]
   },
   "usingComponents": {}
 }

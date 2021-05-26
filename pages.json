@@ -1,4 +1,5 @@
 {
+	// 页面路径及样式
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -17,12 +18,46 @@
 			"style": {
 				"navigationBarTitleText": "message"
 			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情页"
+			}
 		}
 	],
+	// 全局样式
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	// 标签栏
+	"tabBar": { 
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "组件"
+	    }, {
+	        "pagePath": "pages/message/message",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "接口"
+	    }
+		]
+	},
+	// 启动模式配置，仅开发期间生效，用于模拟直达页面的场景，如：小程序转发后，用户点击所打开的页面。
+	"condition": { //模式配置，仅开发期间生效
+	    "current": 0, //当前激活的模式（list 的索引项）
+	    "list": [
+				{
+						"name": "详情页", //模式名称
+						"path": "pages/detail/detail", //启动页面，必选
+						"query": "id=80" //启动参数，在页面的onLoad函数里面得到。
+				}
+	    ]
 	}
+	
 }
