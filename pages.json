@@ -1,6 +1,15 @@
 {
 	// 页面路径及样式
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path" : "pages/uni-style/uni-style",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "学习样式",
+					"enablePullDownRefresh": false
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -25,7 +34,8 @@
 				"navigationBarTitleText": "详情页"
 			}
 		}
-	],
+   ],
+	 
 	// 全局样式
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -40,11 +50,18 @@
 	        "iconPath": "static/logo.png",
 	        "selectedIconPath": "static/logo.png",
 	        "text": "组件"
-	    }, {
+	    },
+			{
 	        "pagePath": "pages/message/message",
 	        "iconPath": "static/logo.png",
 	        "selectedIconPath": "static/logo.png",
 	        "text": "接口"
+	    },
+			{
+	        "pagePath": "pages/uni-style/uni-style",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "样式"
 	    }
 		]
 	},

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/uni-style/uni-style",
     "pages/index/index",
     "pages/message/message",
     "pages/detail/detail"
@@ -24,6 +25,12 @@
         "iconPath": "static/logo.png",
         "selectedIconPath": "static/logo.png",
         "text": "接口"
+      },
+      {
+        "pagePath": "pages/uni-style/uni-style",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "样式"
       }
     ]
   },
