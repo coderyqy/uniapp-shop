@@ -138,14 +138,37 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      title: "我是标题" };
+      title: "我是标题",
+      infoList: [
+      {
+        name: '张三' },
+
+      {
+        name: '张三老爸' },
+
+      {
+        name: '张三爷爷' },
+
+      {
+        name: '我是大佬' }] };
+
+
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    clickHandle: function clickHandle(num, e) {
+      console.log("唐伯虎点秋香");
+      console.log(num);
+      console.log(e);
+    } } };exports.default = _default;
 
 /***/ }),
 

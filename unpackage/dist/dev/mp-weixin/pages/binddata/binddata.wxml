@@ -1,1 +1,1 @@
-<view><view class="title"><text>{{title}}</text></view></view>
+<view><view class="title"><text>{{title}}</text></view><block wx:for="{{infoList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view>{{''+item.name+''}}</view></block><button type="default" data-event-opts="{{[['tap',[['clickHandle',[20,'$event']]]]]}}" bindtap="__e">按钮</button></view>
