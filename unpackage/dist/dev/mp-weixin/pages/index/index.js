@@ -141,8 +141,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 var _default =
 {
   data: function data() {
@@ -151,6 +149,7 @@ var _default =
       num: 30 };
 
   },
+
   onInit: function onInit() {
     console.log("index onInit");
   },
@@ -181,6 +180,16 @@ var _default =
   methods: {
     pullDown: function pullDown() {
       uni.startPullDownRefresh();
+    },
+    getData: function getData() {var _this = this;
+      uni.request({
+        url: '', //仅为示例，并非真实接口地址。
+        method: "GET",
+        success: function success(res) {
+          console.log(res.data);
+          _this.text = 'request success';
+        } });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

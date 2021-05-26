@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><block wx:for="{{num}}" wx:for-item="i" wx:for-index="__i0__"><view>{{''+i+''}}</view></block></view>
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><button type="primary" data-event-opts="{{[['tap',[['getData',['$event']]]]]}}" bindtap="__e">发送网络请求</button></view>

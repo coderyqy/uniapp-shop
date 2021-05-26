@@ -4,10 +4,8 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<view class="" v-for="i in num">
-			{{i}}
-		</view>
-		<!-- <button type="primary" @click="pullDown">下拉刷新</button> -->
+		
+		<button type="primary" @click="getData">发送网络请求</button>
 	</view>
 </template>
 
@@ -19,6 +17,7 @@
 				num: 30
 			}
 		},
+		
 		onInit() {
 				console.log("index onInit")
 		},
@@ -49,6 +48,16 @@
 		methods: {
 			pullDown() {
 				uni.startPullDownRefresh()
+			},
+			getData() {
+				uni.request({
+				    url: '', //仅为示例，并非真实接口地址。
+				    method: "GET",
+				    success: (res) => {
+				        console.log(res.data);
+				        this.text = 'request success';
+				    }
+				})
 			}
 		}
 	}
