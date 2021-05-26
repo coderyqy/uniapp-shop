@@ -1,7 +1,14 @@
 {
 	// 页面路径及样式
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
+		{
+				"path" : "pages/binddata/binddata",
+				"style" :                                                                                    
+				{
+						"navigationBarTitleText": "使用数据绑定",
+						"enablePullDownRefresh": false
+				}
+		},
 		{
 			"path" : "pages/uni-style/uni-style",
 			"style" :                                                                                    
@@ -34,7 +41,7 @@
 				"navigationBarTitleText": "详情页"
 			}
 		}
-   ],
+    ],
 	 
 	// 全局样式
 	"globalStyle": {
