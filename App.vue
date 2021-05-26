@@ -8,6 +8,10 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		onError: function(err) {
+			console.log("报错了")
+			console.log(err)
 		}
 	}
 </script>

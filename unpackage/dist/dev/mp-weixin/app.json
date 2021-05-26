@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/binddata/binddata",
     "pages/uni-style/uni-style",
-    "pages/index/index",
     "pages/message/message",
     "pages/detail/detail"
   ],

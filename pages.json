@@ -2,6 +2,18 @@
 	// 页面路径及样式
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh":true,
+				"h5": {
+					"pullToRefresh": {
+						"color":"#007AFF"
+					}
+				}
+			}
+		},
+		{
 				"path" : "pages/binddata/binddata",
 				"style" :                                                                                    
 				{
@@ -15,18 +27,6 @@
 			{
 					"navigationBarTitleText": "学习样式",
 					"enablePullDownRefresh": false
-			}
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"enablePullDownRefresh":true,
-				"h5": {
-					"pullToRefresh": {
-						"color":"#007AFF"
-					}
-				}
 			}
 		},
 		{

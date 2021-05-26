@@ -14,8 +14,26 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
+		onInit() {
+				console.log("index onInit")
+		},
+		onLoad(options) {
+			console.log("index onLoad")
+		},
+		onShow() {
+			console.log("index show")
+		},
+		onHide() {
+			console.log("index onHide")
+		},
+		onReady() {
+			console.log("index onReady")
+		},
+		onUnload() {
+			console.log("index onUnload")
+		},
+		onPullDownRefresh() {
+			console.log("下拉刷新")
 		},
 		methods: {
 
