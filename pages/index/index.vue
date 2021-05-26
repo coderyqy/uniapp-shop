@@ -4,6 +4,10 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<view class="" v-for="i in num">
+			{{i}}
+		</view>
+		<!-- <button type="primary" @click="pullDown">下拉刷新</button> -->
 	</view>
 </template>
 
@@ -11,7 +15,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				num: 30
 			}
 		},
 		onInit() {
@@ -34,9 +39,17 @@
 		},
 		onPullDownRefresh() {
 			console.log("下拉刷新")
+			setTimeout(function(){
+				uni.stopPullDownRefresh()
+			}, 2000)
+		},
+		onReachBottom() {
+			this.num += 20
 		},
 		methods: {
-
+			pullDown() {
+				uni.startPullDownRefresh()
+			}
 		}
 	}
 </script>
