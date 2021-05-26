@@ -6,6 +6,7 @@
 		</view>
 		
 		<button type="primary" @click="getData">发送网络请求</button>
+		<button type="primary" @click="uploadImg">上传图片</button>
 	</view>
 </template>
 
@@ -17,7 +18,6 @@
 				num: 30
 			}
 		},
-		
 		onInit() {
 				console.log("index onInit")
 		},
@@ -58,6 +58,27 @@
 				        this.text = 'request success';
 				    }
 				})
+			},
+			uploadImg() {
+				uni.chooseImage({
+				    count: 6,
+				    success: function(res) {
+				        // 预览图片
+								console.log(res)
+								uni.previewImage({
+								            urls: res.tempFilePaths,
+								            longPressActions: {
+								                itemList: ['发送给朋友', '保存图片', '收藏'],
+								                success: function(data) {
+								                    console.log('选中了第' + (data.tapIndex + 1) + '个按钮,第' + (data.index + 1) + '张图片');
+								                },
+								                fail: function(err) {
+								                    console.log(err.errMsg);
+								                }
+								            }
+								        });
+				    }
+				    });
 			}
 		}
 	}

@@ -141,6 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -149,7 +150,6 @@ var _default =
       num: 30 };
 
   },
-
   onInit: function onInit() {
     console.log("index onInit");
   },
@@ -188,6 +188,27 @@ var _default =
         success: function success(res) {
           console.log(res.data);
           _this.text = 'request success';
+        } });
+
+    },
+    uploadImg: function uploadImg() {
+      uni.chooseImage({
+        count: 6,
+        success: function success(res) {
+          // 预览图片
+          console.log(res);
+          uni.previewImage({
+            urls: res.tempFilePaths,
+            longPressActions: {
+              itemList: ['发送给朋友', '保存图片', '收藏'],
+              success: function success(data) {
+                console.log('选中了第' + (data.tapIndex + 1) + '个按钮,第' + (data.index + 1) + '张图片');
+              },
+              fail: function fail(err) {
+                console.log(err.errMsg);
+              } } });
+
+
         } });
 
     } } };exports.default = _default;
