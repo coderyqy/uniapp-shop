@@ -1,6 +1,6 @@
 <template>
 	<view>
-sfadfasdf
+		
 	</view>
 </template>
 
@@ -18,5 +18,5 @@ sfadfasdf
 </script>
 
 <style>
-	
+
 </style>

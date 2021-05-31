@@ -1,0 +1,1 @@
+<view><view class="btn-area"><navigator url="/pages/index/index" open-type="switchTab" hover-class="navigator-hover"><button type="default">首页</button></navigator><navigator url="/pages/detail/detail" hover-class="other-navigator-hover"><button type="default">详情页</button></navigator></view></view>

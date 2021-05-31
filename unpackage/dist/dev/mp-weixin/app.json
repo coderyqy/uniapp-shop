@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/nav/nav",
     "pages/index/index",
     "pages/binddata/binddata",
     "pages/uni-style/uni-style",

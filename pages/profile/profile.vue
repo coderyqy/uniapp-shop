@@ -1,6 +1,6 @@
 <template>
 	<view>
-		dfgdfg
+		
 	</view>
 </template>
 
